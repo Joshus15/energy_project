@@ -32,4 +32,4 @@ jobs:
         env:
           MONGODB_URI: ${{ secrets.MONGODB_URI}}
         run: |
-          final_mac.py
+          python3 final_mac.py
