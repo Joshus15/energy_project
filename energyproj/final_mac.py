@@ -15,10 +15,10 @@ from pprint import pprint
 
 
 load_dotenv()
-#MONGODB_URI = os.environ['MONGODB_URI']
+MONGODB_URI = os.environ['MONGODB_URI']
 
 # Connect to your MongoDB cluster:
-client = MongoClient("mongodb://joshus:gEaxdmptTLkKHyhP@cluster0-shard-00-00.zky6k.mongodb.net:27017,cluster0-shard-00-01.zky6k.mongodb.net:27017,cluster0-shard-00-02.zky6k.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-gaba9t-shard-0&authSource=admin&retryWrites=true&w=majority", ssl = True, ssl_cert_reqs=ssl.CERT_NONE)
+client = MongoClient(MONGODB_URI, ssl = True, ssl_cert_reqs=ssl.CERT_NONE)
 
 # List all the databases in the cluster:
 #for db_info in client.list_database_names():
