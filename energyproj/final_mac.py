@@ -37,7 +37,7 @@ def get_cpu_data():
     CPU_usage = []
     #Input number of seconds over which you wish to measure CPU usage
     #tdp = int(input('What is the tdp of your system?'))
-    vers = str(input('What is the version of the platform you are running on? (ex. 1.4.00.11161.)'))
+    vers = input('What is the version of the platform you are running on? (ex. 1.4.00.11161.)')
     no_people = int(input('How many people are in the call?'))
     VC = str(input('What VC platform are you using?'))
     video = str(input('Video(yes/no)?'))
