@@ -22,6 +22,6 @@ jobs:
         python-version: 3.9
     - name: Install dependencies
       run: |
-        sh energyproj/shell_script.sh
+        sh shell_script.sh
       env: 
         MONGODB_URI: ${{ secrets.MONGODB_URI }}
