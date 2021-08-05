@@ -37,11 +37,11 @@ def get_cpu_data():
     CPU_usage = []
     #Input number of seconds over which you wish to measure CPU usage
     #tdp = int(input('What is the tdp of your system?'))
-    vers = input('What is the version of the platform you are running on? (ex. 1.4.00.11161.)')
-    no_people = int(input('How many people are in the call?'))
     VC = str(input('What VC platform are you using?'))
+    vers = input('What is the version of the platform you are running on? (ex. 1.4.00.11161.)')
     video = str(input('Video(yes/no)?'))
     vback = str(input('Virtual Background (yes/no)?'))
+    no_people = int(input('How many people are in the call?'))
 
     if VC == 'TEAMS' or VC == 'teams' or VC == 'Microsoft Teams' or VC == 'Microsoft teams' or VC == 'microsoft teams' or VC == 'microsoft Teams':
         VC = 'Teams'

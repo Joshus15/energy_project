@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cd "$(dirname "${BASH_SOURCE[0]}")"
+cd ..
+git pull
+echo export MONGODB_URI='mongodb://joshus:gEaxdmptTLkKHyhP@cluster0-shard-00-00.zky6k.mongodb.net:27017,cluster0-shard-00-01.zky6k.mongodb.net:27017,cluster0-shard-00-02.zky6k.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-gaba9t-shard-0&authSource=admin&retryWrites=true&w=majority'> .env
+echo ".env" >> .gitignore
+sh shell_script.sh
